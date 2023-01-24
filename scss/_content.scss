@@ -1,0 +1,168 @@
+@use 'sass:map';
+
+@use 'config/font';
+@use 'config/color';
+@use 'config/screen';
+
+
+html
+{
+ font-size: 18px; 
+ 
+ $font-mod: 1;
+ @each $prefix, $screen-width in screen.size() 
+ {
+    @media (min-width: $screen-width) { font-size: 18px + $font-mod;}
+    $font-mod: $font-mod + 1;   
+ }
+}
+
+body
+{
+    font-family: font.family('normal');
+    line-height: 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    display: inline-block;
+    width: 100%;
+    margin: .2em 0 .3em 0;
+    font-family: font.family('title');
+    line-height: 1.6em;
+} 
+
+h1{font-size: 2rem;}
+h2{font-size: 1.8rem;}
+h3{font-size: 1.6rem;}
+h4{font-size: 1.4rem;}
+h5{font-size: 1.2rem;}
+h6{font-size: 1rem;}
+
+p
+{
+    margin: .3rem 0;
+}
+
+ul,ol{
+    padding: .1em 1em .1em 1.5em;
+    margin: .5em 0;
+    li {
+        &::marker
+        {
+            color: color.get('alert');
+        }
+    }
+}
+
+
+.content
+{
+    table, caption{
+        background-color: color.get('light');
+    }
+}
+table{
+    background-color: color.get('light');
+    padding: 1rem;
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 100%;
+    }
+table, td, th,tfoot th  {
+    border: 1px black;
+    border-right-style: solid;
+  }
+
+
+caption{
+    font-weight: bold;
+    background-color: color.get('light');
+    border-radius: 5px;
+    margin: .5rem 0 0 0 ;
+}
+
+
+thead th{
+    background-color:color.get('primary') ;
+    color: white;
+    font-size: .75rem;
+    padding: .1rem 0.1rem .1rem 0;
+}
+tfoot th
+{
+    background-color: transparentize(color.get('dark'), .4);
+    color: white;
+    font-size: 2rem;
+}
+
+tr:nth-of-type(even)
+{
+    background-color: transparentize(color.get('secondary'), .7);
+    border-collapse: collapse;
+}
+
+
+tr:nth-of-type(odd)
+{
+    background-color: color.get('light');
+    border-collapse: collapse;
+}
+
+td:last-child
+{
+    border-right: 0px solid;
+}
+
+figure
+{
+    width: fit-content;
+    border: 0.5px solid;
+    border-radius: 5px;
+    margin: 0rem;
+    overflow:hidden;
+    figcaption
+    {
+        margin-left: 35%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
+
+.content
+{
+    margin: 0.5rem;
+}
+
+#forms__input
+{
+    background-color: transparentize(color.get('secondary'), .9);
+}
+
+legend
+{
+    display: flex;
+    background-color: transparentize(color.get('primary'),.2);
+    color: white;
+    font-weight: bold;
+}
+
+input,select
+{
+    width:100%;
+    border-color: white;
+    border-radius: 6px;
+    padding: 0.4rem;
+}
+
+button
+{
+    background-color: transparentize(color.get('alert'),.7);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: .5rem;
+}
+button:last-of-type
+{
+    background-color: color.get('primary');
+}

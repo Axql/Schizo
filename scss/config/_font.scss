@@ -1,0 +1,11 @@
+@use 'sass:map';
+
+$font-families: (
+  'normal': ('Source Sans 3', sans-serif),
+  'title': ('Oswald', sans-serif)
+);
+
+@function family( $name: false ) {
+  @if $name { @return map-get($font-families, $name); }
+  @else { @return $font-families }
+}

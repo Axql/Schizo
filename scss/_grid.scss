@@ -1,0 +1,85 @@
+@use 'sass:math';
+@use 'sass:map';
+
+@use 'config/screen';
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  body * {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  
+    @each $size, $screenwidth in screen.size() {
+      @media screen and (min-width: $screenwidth) {
+        $division: math.round(math.div(($screenwidth * .95), 10));
+        width: $division * 10;
+      }
+    }
+  }
+  
+  .row,
+  [class^='col-'],
+  [class*=' col-'],
+  .col
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .row > * {
+    flex-shrink: 0; 
+    width: 100%
+    }
+  
+    [class^='col-'], 
+    [class*=' col-'],
+    .col {
+    position: relative;
+    padding: .5rem;
+    flex-direction: column;
+    flex: 0 0 auto;
+    .inner {
+    padding: .5rem; 
+    min-height: 2rem;
+  
+    }
+  }
+  
+  $colnum : 12;
+  $width-map: ();
+  
+  @for $i from 1 through $colnum 
+  {
+    $width: calc(100% / math.div($colnum, $i));
+    $width-map: map.set($width-map, $i, $width);
+  
+    .col-#{$i}
+    {
+      width: $width;
+    }
+  }
+  
+  @each $size, $screenwidth in screen.size() 
+  {
+    @media (min-width: $screenwidth)
+    {
+      @for $i from 0 through $colnum
+      {
+        .col-#{$size}-#{$i}
+        {
+          width: map.get($width-map, $i);
+        }
+      }
+    }
+  }
+  

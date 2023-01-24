@@ -1,0 +1,14 @@
+@use 'sass:map';
+
+$sizes: (
+  's': 576px,
+  'm': 768px,
+  'l': 992px,
+  'xl': 1200px,
+  'xxl': 1400px
+);
+
+@function size($size: false) {
+  @if ($size) { @return map-get($sizes, $size); } 
+  @else { @return $sizes; }
+}

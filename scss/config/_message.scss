@@ -1,0 +1,19 @@
+@use 'sass:map';
+
+$message-colors: (
+  'info': #3098F2,
+  'success': #8CE205,
+  'warning': #F2E205,
+  'danger': #F2B705,
+  'error': #F22D05
+);
+
+@function get($name: false) {
+  @if $name { @return map-get($message-colors, $name); }
+  @else { @return $message-colors; }
+}
+
+@each $name, $color in $message-colors {
+  .bg-#{$name} { background-color: $color; }
+  .text-#{$name} { color: $color; }
+}

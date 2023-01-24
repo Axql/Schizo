@@ -1,0 +1,19 @@
+@use 'sass:map';
+
+$colors: (
+  'primary': #3498DB,
+  'secondary': #2980B9,
+  'alert': #E74C3C,
+  'light': #ECF0F1,
+  'dark': #2C3E50
+);
+
+@function get($name: false) {
+  @if $name { @return map-get($colors, $name); }
+  @else { @return $colors; }
+}
+
+@each $name, $color in $colors {
+  .bg-#{$name} { background-color: $color; }
+  .text-#{$name} { color: $color; }
+}

@@ -1,0 +1,328 @@
+@use 'sass:math';
+
+@use 'config/color';
+@use 'config/message';
+
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid color.get('dark');
+  z-index: 2;
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      position: relative;
+      padding: 0;
+      margin: 0;
+
+      a {
+        display: inline-block;
+        padding: .5rem;
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+          color: color.get('primary')
+        }
+      }
+
+      ul {
+        position: absolute;
+        flex-direction: column;
+        display: none;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+
+        li a {
+          white-space: nowrap;
+
+          &:not(:last-of-type) {
+            border-bottom: 1px solid color.get('dark');
+          }
+        }
+      }
+
+      &:hover ul {
+        display: flex;
+      }
+    }
+  }
+}
+
+div.banner {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 4rem;
+  margin-bottom: 2rem;
+  z-index: 1;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  div.content {
+    position: absolute;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff88;
+    z-index: 2;
+  }
+
+  &.content-top {
+    align-items: flex-start;
+  }
+
+  &.content-bottom {
+    align-items: flex-end;
+  }
+
+  &.content-left {
+    justify-content: flex-start;
+
+    div.content {
+      text-align: left
+    }
+  }
+
+  &.content-right {
+    justify-content: flex-end;
+
+    div.content {
+      text-align: right
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  margin: 1rem .5rem;
+  gap: 1rem;
+
+  &.gallery {
+    img {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+  }
+
+  // OPDRACHT 4.C STAP 3
+
+  @for $i from 12 through 1 {
+    &.grid-row-#{$i} {
+      grid-template-rows: repeat($i, 1fr);
+      grid-auto-rows: math.div(100%, $i);
+    }
+
+    &.grid-column-#{$i} {
+      grid-template-columns: repeat($i, 1fr)
+    }
+
+    .grid-col.grid-row-span-#{$i} {
+      grid-row: span $i
+    }
+
+    ;
+
+    .grid-col.grid-col-span-#{$i} {
+      grid-column: span $i
+    }
+
+    ;
+  }
+}
+
+button {
+  padding: .5rem 1rem;
+  background-color: #fff;
+  border-radius: .2rem;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+
+  // OPDRACHT 4.C STAP 4 
+  @each $name,
+  $color in color.get() {
+    &.#{$name}-button {
+      background-color: $color;
+
+      @if lightness($color)>60 {
+        color: color.get('dark')
+      }
+
+      @else {
+        color: color.get('light');
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+}
+
+footer {
+  padding: 1rem 0;
+  background-color: #222;
+  text-align: center;
+  color: #fff;
+}
+
+img {
+  object-fit: cover;
+
+  &.rounded {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.card {
+  background-color: color.get('light');
+  border-radius: .3rem;
+  overflow: hidden;
+
+  >*:not(img):not(button) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 0;
+
+    &.rounded {
+      width: 80%;
+      margin: 10%;
+    }
+  }
+
+  button {
+    margin: .5rem
+  }
+
+  header,
+  footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  header {
+    border-bottom: 1px solid color.get('dark')
+  }
+
+  >footer {
+    background-color: transparent;
+    border-top: 1px solid color.get('dark');
+    font-size: .8rem;
+  }
+}
+
+.txt-left {
+  text-align: left
+}
+
+.txt-center {
+  text-align: center
+}
+
+.txt-right {
+  text-align: right
+}
+
+.alert {
+  position: relative;
+  padding-left: 3rem;
+  border: 1px solid color.get('dark');
+  background-color: color.get('info');
+
+  i {
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+
+    &.bx-x {
+      right: 0;
+      font-size: 1rem;
+    }
+
+    &:not(.bx-x) {
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      font-size: medium;
+      color: white;
+    }
+  }
+}
+
+@each $name,
+$color in message.get() {
+  .is-#{$name} {
+    border-color: $color;
+    background-color: lighten($color, 30%);
+
+    i:not(.bx-x) {
+      background-color: $color;
+    }
+  }
+}
+
+.dashboard-block
+{
+  
+  text-align: right;
+ .inner {
+  position: relative;
+  border: solid;
+  border-width: .1rem;
+  border-left-width: .25rem;
+  border-radius: 0 .5rem .5rem 0;
+  @each $name,$color in color.get() {
+    &.color-#{$name} {
+      border-color: $color;
+      color: $color;
+    }
+    p
+    {
+      color: $color;
+    }
+  }
+ }
+  i
+  {
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+  }
+
+}
