@@ -1,0 +1,23 @@
+{
+  "name": "schizo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Axql/Schizo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Axql/Schizo/issues"
+  },
+  "homepage": "https://github.com/Axql/Schizo#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
