@@ -1019,5 +1019,21 @@ img.rounded {
   position: absolute;
   left: 0;
 }
+/*dit is van de geschiedenis pagina hier onder*/
+.geschiedenisPN{
+  font-size: 4rem;
 
+  position:absolute;
+}
+/*styling van de naam geschiedenis bovenaan^^^^^^*/
+.geschiedenisPL{
+  width: 40%;
+  height: 20%;
+}
+/*dit is van de de foto schizo^^^^*/
+.geschiedenisPND{
+  padding: 4rem;
+}
+/*dit is van de de div^^^^^^*/
+/*dit is van de geschiedenis pagina^^^^^^^^^^^^^^^^^^^^*/
 /*# sourceMappingURL=style.css.map */
