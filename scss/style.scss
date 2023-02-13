@@ -1,5 +1,29 @@
 @use 'grid';
 @use 'content';
 @use 'components';
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 
-// pp power
+// index.html start
+
+#inleiding-html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+#schizo-titel {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    font-weight: 600;
+}
+
+#inleiding-html-text {
+    text-align: center;
+}
+
+#inleiding-html-img {
+    width: 40%;
+}
+
+// index.html end
