@@ -10,7 +10,7 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #333;
+  background-color: #a3f4f7 ;
 
   ul {
     display: flex;
@@ -26,7 +26,7 @@ nav {
       a {
         display: block;
         padding: 1rem;
-        color: white;
+        color: rgb(121, 0, 105);
         text-decoration: none;
         white-space: nowrap;
       }
@@ -37,7 +37,7 @@ nav {
         left: 0;
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: #a3f4f7;
       }
 
       &:hover ul {

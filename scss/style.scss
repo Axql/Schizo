@@ -1,3 +1,49 @@
 @use 'grid';
 @use 'content';
 @use 'components';
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+// index.html start
+
+#inleiding-html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+#schizo-titel {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    font-weight: 600;
+}
+
+#inleiding-html-text {
+    text-align: center;
+}
+
+#inleiding-html-img {
+    width: 40%;
+}
+
+// index.html end
+// geschiedenis.html start //
+.geschiedenisPL {
+    width: 20%;
+    padding: 0.4rem;
+}
+.geschiedenisHR {
+    background-color: #000000;
+    height: 4px;
+    border-radius: 4px;
+    width: 80%;
+}
+.geschiedenisPN {
+    font-size: 4rem;
+    justify-content: center;
+    display: flex;
+}
+.geschiedenisPND{
+    padding: 4rem;
+}
+// geschiedins.html end //
