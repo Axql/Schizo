@@ -7,6 +7,5 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>this page is in development</h1>
-</body>
+<h1><?php echo "this page is in development"?></h1>
 </html>
