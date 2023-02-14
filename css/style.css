@@ -570,7 +570,7 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #333;
+  background-color: #a3f4f7;
 }
 nav ul {
   display: flex;
@@ -583,10 +583,13 @@ nav ul {
 nav ul li {
   position: relative;
 }
+nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 nav ul li a {
   display: block;
   padding: 1rem;
-  color: white;
+  color: rgb(86, 2, 86);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -596,7 +599,7 @@ nav ul li > ul {
   left: 0;
   display: none;
   flex-direction: column;
-  background-color: #333;
+  background-color: #a3f4f7;
 }
 nav ul li:hover ul {
   display: flex;
