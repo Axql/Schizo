@@ -571,6 +571,7 @@ nav {
   align-items: center;
   flex-direction: column;
   background-color: #a3f4f7;
+  background-color: #a3f4f7;
 }
 nav ul {
   display: flex;
@@ -582,6 +583,9 @@ nav ul {
 }
 nav ul li {
   position: relative;
+}
+nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 nav ul li a {
   display: block;

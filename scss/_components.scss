@@ -11,6 +11,7 @@ nav {
   align-items: center;
   flex-direction: column;
   background-color: #a3f4f7 ;
+  background-color: #a3f4f7;
 
   ul {
     display: flex;
@@ -22,7 +23,9 @@ nav {
 
     li {
       position: relative;
-
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.200);
+      }
       a {
         display: block;
         padding: 1rem;
@@ -167,15 +170,6 @@ button {
       }
     }
   }
-
-
-
-
-
-
-
-
-
 }
 
 footer {

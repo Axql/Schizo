@@ -7,5 +7,5 @@
     <title>Document</title>
 </head>
 <body>
-<h1><?php echo "testing this page"?></h1>
+<h1><?php echo "this page is in development"?></h1>
 </html>
