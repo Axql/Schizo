@@ -1,0 +1,30 @@
+img {
+    position: absolute;
+    left: 65em;
+    top: 8rem;
+    width: 14rem;
+}
+
+.info-tekst {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 6em 0;
+
+    h1 {
+        align-self: center;
+        width: 12rem;
+        height: 0;
+        margin: 2.5em;
+    }
+
+    .Symptomen {
+        width: 60rem;
+        padding: 0 10em;
+    }
+
+    .Oorzaak {
+        width: 60rem;
+        padding: 2em 10em;
+    }
+}

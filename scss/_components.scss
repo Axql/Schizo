@@ -10,15 +10,18 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid color.get('dark');
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
 
   ul {
     display: flex;
-    padding: 0;
     margin: 0;
-    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
 
     li {
       position: relative;
@@ -26,31 +29,22 @@ nav {
       margin: 0;
 
       a {
-        display: inline-block;
-        padding: .5rem;
-        color: #000;
+        display: block;
+        padding: 1rem;
+        color: white;
         text-decoration: none;
-
-        &:hover {
-          color: color.get('primary')
-        }
+        white-space: nowrap;
       }
 
-      ul {
+      >ul {
         position: absolute;
         flex-direction: column;
         display: none;
         top: 100%;
         left: 0;
-        background-color: #fff;
-
-        li a {
-          white-space: nowrap;
-
-          &:not(:last-of-type) {
-            border-bottom: 1px solid color.get('dark');
-          }
-        }
+        display: none;
+        flex-direction: column;
+        background-color: #333;
       }
 
       &:hover ul {
@@ -297,29 +291,31 @@ $color in message.get() {
   }
 }
 
-.dashboard-block
-{
+.dashboard-block {
   
   text-align: right;
+
  .inner {
   position: relative;
   border: solid;
   border-width: .1rem;
   border-left-width: .25rem;
   border-radius: 0 .5rem .5rem 0;
-  @each $name,$color in color.get() {
+
+    @each $name,
+    $color in color.get() {
     &.color-#{$name} {
       border-color: $color;
       color: $color;
     }
-    p
-    {
+
+      p {
       color: $color;
     }
   }
  }
-  i
-  {
+
+  i {
     font-size: 3rem;
     position: absolute;
     left: 0;
