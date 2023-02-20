@@ -10,7 +10,7 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #333;
+  background-color: #a3f4f7;
 
   ul {
     display: flex;
@@ -22,11 +22,13 @@ nav {
 
     li {
       position: relative;
-
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.200);
+      }
       a {
         display: block;
         padding: 1rem;
-        color: white;
+        color: rgb(86, 2, 86);
         text-decoration: none;
         white-space: nowrap;
       }
@@ -37,7 +39,7 @@ nav {
         left: 0;
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: #a3f4f7;
       }
 
       &:hover ul {
@@ -167,15 +169,6 @@ button {
       }
     }
   }
-
-
-
-
-
-
-
-
-
 }
 
 footer {
