@@ -28,12 +28,12 @@ include 'functions.php';
             
             echo TotaalPunten();
             
-    $to = "336469@student.mboutrecht.nl";
-    $subject = "deez nuts";
+    $to = "336019@student.mboutrecht.nl";
+    $subject = "quiz antwoord";
 
 
            
         ?>
         <html>
-            <button><?php mail($to, $subject, "deez nuts across your face mf");?> click hier voor een mailtje</button>
+            <button><?php mail($to, $subject, TotaalPunten());?> click hier voor een mailtje</button>
         </html>
