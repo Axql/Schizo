@@ -97,3 +97,9 @@ function TotaalPunten()
     global $punten;
     return "u heeft $punten van de 44 punten gehaald";
 }
+
+function Sendmail($lana)
+{
+    $subject = "uw uitslag van de quiz";
+    mail($lana, $subject, "hallo tijs ");
+}
