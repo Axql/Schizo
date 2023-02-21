@@ -572,13 +572,18 @@ nav {
   flex-direction: column;
   background-color: #a3f4f7;
 }
+nav #logo {
+  position: absolute;
+  left: 0;
+  height: 3rem;
+}
 nav ul {
   display: flex;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
-  justify-content: space-between;
+  justify-content: center;
 }
 nav ul li {
   position: relative;
@@ -589,7 +594,7 @@ nav ul li:hover {
 nav ul li a {
   display: block;
   padding: 1rem;
-  color: rgb(86, 2, 86);
+  color: rgb(121, 0, 105);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -1043,6 +1048,23 @@ img.rounded {
 
 #inleiding-html-img {
   width: 40%;
+}
+
+.geschiedenisHR {
+  background-color: #000000;
+  height: 4px;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.geschiedenisPN {
+  font-size: 4rem;
+  justify-content: center;
+  display: flex;
+}
+
+.geschiedenisPND {
+  padding: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
