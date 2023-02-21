@@ -571,7 +571,11 @@ nav {
   align-items: center;
   flex-direction: column;
   background-color: #a3f4f7;
-  background-color: #a3f4f7;
+}
+nav #logo {
+  position: absolute;
+  left: 0;
+  height: 3rem;
 }
 nav ul {
   display: flex;
@@ -579,7 +583,7 @@ nav ul {
   padding: 0;
   text-decoration: none;
   list-style: none;
-  justify-content: space-between;
+  justify-content: center;
 }
 nav ul li {
   position: relative;
@@ -1044,16 +1048,6 @@ img.rounded {
 
 #inleiding-html-img {
   width: 40%;
-}
-
-.geschiedenisPL {
-  position: absolute;
-  height: 3rem;
-  padding: 0.4rem;
-  z-index: 2;
-  justify-self: flex-start;
-  display: flex;
-  left: 0;
 }
 
 .geschiedenisHR {
