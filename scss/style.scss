@@ -3,14 +3,11 @@
 @use 'components';
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 
-// index.html start
+// Elke pagina-start
+// Elke pagina-einde
 
-#inleiding-html {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5%;
-}
+
+// index.html start
 
 #schizo-titel {
     text-align: center;
@@ -22,8 +19,5 @@
     text-align: center;
 }
 
-#inleiding-html-img {
-    width: 40%;
-}
 
 // index.html end

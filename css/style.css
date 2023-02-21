@@ -1024,13 +1024,6 @@ img.rounded {
   left: 0;
 }
 
-#inleiding-html {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5%;
-}
-
 #schizo-titel {
   text-align: center;
   font-family: "Bowlby One SC", cursive;
@@ -1039,10 +1032,6 @@ img.rounded {
 
 #inleiding-html-text {
   text-align: center;
-}
-
-#inleiding-html-img {
-  width: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */
