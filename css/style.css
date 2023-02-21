@@ -1047,8 +1047,13 @@ img.rounded {
 }
 
 .geschiedenisPL {
-  width: 20%;
+  position: absolute;
+  height: 3rem;
   padding: 0.4rem;
+  z-index: 2;
+  justify-self: flex-start;
+  display: flex;
+  left: 0;
 }
 
 .geschiedenisHR {
