@@ -572,7 +572,7 @@ nav {
   flex-direction: column;
   background-color: #a3f4f7;
 }
-nav #logo {
+nav .logo {
   position: absolute;
   left: 0;
   height: 3rem;
@@ -1029,6 +1029,36 @@ img.rounded {
   left: 0;
 }
 
+@media all and (max-width: 880px) {
+  .logo {
+    display: none;
+  }
+}
+@media (min-width: 1250px) and (max-width: 3840px) {
+  body {
+    padding-top: 5%;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1249px) {
+  body {
+    padding-top: 6%;
+  }
+}
+@media (min-width: 850px) and (max-width: 1049px) {
+  body {
+    padding-top: 7%;
+  }
+}
+@media (min-width: 550px) and (max-width: 849px) {
+  body {
+    padding-top: 10%;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  body {
+    padding-top: 15%;
+  }
+}
 #schizo-titel {
   text-align: center;
   font-family: "Bowlby One SC", cursive;
@@ -1037,12 +1067,6 @@ img.rounded {
 
 #inleiding-html-text {
   text-align: center;
-}
-
-<<<<<<< HEAD
-=======
-#inleiding-html-img {
-  width: 40%;
 }
 
 .geschiedenisHR {
@@ -1062,5 +1086,4 @@ img.rounded {
   padding: 4rem;
 }
 
->>>>>>> 8db563f942efa54b566250322ce3aa02a5b92ef2
 /*# sourceMappingURL=style.css.map */

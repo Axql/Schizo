@@ -3,11 +3,52 @@
 @use 'components';
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 
-// Elke pagina-start
-// Elke pagina-einde
+// elke-pagina styling start ---
+
+// logo zou hierdoor verdwijnen na 880px
+@media all and (max-width: 880px) {
+    .logo { display: none; }
+  }
 
 
-// index.html start
+// responsive per screen width | je kan meer elementen toevoegen als je iets moet responsive maken
+@media (min-width: 1250px) and (max-width: 3840px) {
+    body {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1249px) {
+    body {
+        padding-top: 6%;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1049px) {
+    body {
+        padding-top: 7%;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 849px) {
+    body {
+        padding-top: 10%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 549px) {
+    body {
+        padding-top: 15%;
+    }
+}
+
+
+
+
+// elke-pagina styling eind ---
+
+
+// index.html start ---
 
 #schizo-titel {
     text-align: center;
@@ -20,8 +61,9 @@
 }
 
 
-// index.html end
-// geschiedenis.html start //
+// index.html end ---
+
+// geschiedenis.html start ---
 
 .geschiedenisHR {
     background-color: #000000;
@@ -37,4 +79,4 @@
 .geschiedenisPND{
     padding: 4rem;
 }
-// geschiedins.html end //
+// geschiedins.html end ---
