@@ -1,21 +1,33 @@
-img {
+.bubble1 {
     position: absolute;
-    left: 65em;
-    top: 8rem;
+    left: 60em;
+    top: 2rem;
     width: 14rem;
+    z-index: -2;
+}
+
+.bubble2 {
+    position: absolute;
+    left: 5em;
+    top: 5rem;
+    width: 11rem;
+    rotate: 180deg;
+    z-index: -2;
 }
 
 .info-tekst {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 6em 0;
+    top: -1em;
+    z-index: -1;
 
     h1 {
         align-self: center;
         width: 12rem;
         height: 0;
         margin: 2.5em;
+        padding: 1em 0;
     }
 
     .Symptomen {

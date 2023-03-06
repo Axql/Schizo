@@ -573,7 +573,7 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #333;
+  background-color: #a3f4f7;
 }
 nav ul {
   display: flex;
@@ -588,10 +588,13 @@ nav ul li {
   padding: 0;
   margin: 0;
 }
+nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 nav ul li a {
   display: block;
   padding: 1rem;
-  color: white;
+  color: rgb(86, 2, 86);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -603,7 +606,7 @@ nav ul li > ul {
   left: 0;
   display: none;
   flex-direction: column;
-  background-color: #333;
+  background-color: #a3f4f7;
 }
 nav ul li:hover ul {
   display: flex;
@@ -1028,24 +1031,36 @@ img.rounded {
   left: 0;
 }
 
-img {
+.bubble1 {
   position: absolute;
-  left: 65em;
-  top: 8rem;
+  left: 60em;
+  top: 2rem;
   width: 14rem;
+  z-index: -2;
+}
+
+.bubble2 {
+  position: absolute;
+  left: 5em;
+  top: 5rem;
+  width: 11rem;
+  rotate: 180deg;
+  z-index: -2;
 }
 
 .info-tekst {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 6em 0;
+  top: -1em;
+  z-index: -1;
 }
 .info-tekst h1 {
   align-self: center;
   width: 12rem;
   height: 0;
   margin: 2.5em;
+  padding: 1em 0;
 }
 .info-tekst .Symptomen {
   width: 60rem;
