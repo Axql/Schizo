@@ -186,8 +186,10 @@ function TotaalPunten()
     return "u heeft $punten van de 44 punten gehaald";
 }
 
-function Sendmail($lana)
+
+// wat er in de mail staat moet nog komen als wij de goede uistlagen van de test bedacht hebben
+function Sendmail($mailUser)
 {
-    $subject = "sorry voor naar wie dit ging";
-    mail($lana, $subject, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel blandit velit. Cras euismod interdum dignissim. Integer vitae dignissim augue. Ut et metus eu nisl pretium tristique eget eu diam. Quisque nibh mauris, dignissim vitae velit sit amet, interdum suscipit dui. Duis ac pretium nisi. Aliquam vulputate ornare neque, eu tempor mauris tristique et. Fusce eget auctor enim. Donec purus justo, semper ut arcu a, rhoncus molestie sapien. Quisque eros justo, ornare non quam nec, feugiat volutpat turpis. Ut molestie mi vitae venenatis maximus. Etiam interdum dictum nibh, lobortis tristique eros congue eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis a quam facilisis, nec pharetra dui scelerisque.");
+    $subject = "Uitslag scizofrenie test";
+    mail($mailUser, $subject, 'testing tijs sorry');
 }

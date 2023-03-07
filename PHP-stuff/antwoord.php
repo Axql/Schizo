@@ -33,11 +33,9 @@ echo TotaalPunten();
 <html>
 <form action="send.php" method="post">
     <h3>voer uw E-Mail in voor een mailtje van uw score</h3>
-    <input type="text" value="" id="Mail">
-    <input type="hidden" name="Punten" value="<?php TotaalPunten()?>">
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email">
     <input type="submit" value="Submit" class="button">
 </form>
-
-<button><?php Sendmail("335055@student.mboutrecht.nl") ?> click hier voor een mailtje</button>
 
 </html>
