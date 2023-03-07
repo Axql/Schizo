@@ -571,11 +571,14 @@ nav {
   flex-direction: column;
   background: rgb(0, 255, 209);
   background: linear-gradient(90deg, rgb(0, 255, 209) 21%, rgb(0, 255, 252) 53%, rgb(0, 202, 255) 80%);
+  z-index: 3;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.301);
 }
 nav .logo {
   position: absolute;
   left: 0;
   height: 3rem;
+  padding-top: 0.2rem;
 }
 nav ul {
   display: flex;
@@ -604,7 +607,9 @@ nav ul li > ul {
   left: 0;
   display: none;
   flex-direction: column;
-  background-color: #a3f4f7;
+  background: rgb(0, 255, 209);
+  background: linear-gradient(90deg, rgb(0, 255, 209) 21%, rgb(0, 255, 252) 53%, rgb(0, 202, 255) 80%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 nav ul li:hover ul {
   display: flex;
