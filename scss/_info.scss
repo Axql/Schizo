@@ -15,6 +15,33 @@
     z-index: -2;
 }
 
+.bubble3 {
+    position: absolute;
+    left: 35em;
+    bottom: -35rem;
+    width: 9rem;
+    rotate: 81deg;
+    z-index: -2;
+}
+
+.bubble4 {
+    position: absolute;
+    left: 10em;
+    bottom: -47rem;
+    width: 14rem;
+    rotate: 238deg;
+    z-index: -2;
+}
+
+.bubble5 {
+    position: absolute;
+    left: 64em;
+    bottom: -44rem;
+    width: 10rem;
+    rotate: 320deg;
+    z-index: -2;
+}
+
 .info-tekst {
     display: flex;
     flex-direction: column;
@@ -31,12 +58,31 @@
     }
 
     .Symptomen {
+        position: relative;
         width: 60rem;
-        padding: 0 10em;
+        padding: 0 12em;
+        left: 5rem;
     }
 
     .Oorzaak {
+        position: relative;
         width: 60rem;
-        padding: 2em 10em;
+        padding: 2em 12em;
+        left: 5rem;
     }
+
+    .Gevolgen {
+        position: relative;
+        width: 60rem;
+        padding: 2em 12em;
+        left: 5rem;
+    }
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    padding: 0 17em;
+    gap: 10rem;
+    top: 3rem;
 }
