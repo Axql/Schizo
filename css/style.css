@@ -573,13 +573,18 @@ nav {
   background: rgb(0, 255, 209);
   background: linear-gradient(90deg, rgb(0, 255, 209) 21%, rgb(0, 255, 252) 53%, rgb(0, 202, 255) 80%);
 }
+nav .logo {
+  position: absolute;
+  left: 0;
+  height: 3rem;
+}
 nav ul {
   display: flex;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
-  justify-content: space-between;
+  justify-content: center;
 }
 nav ul li {
   position: relative;
@@ -590,7 +595,7 @@ nav ul li:hover {
 nav ul li a {
   display: block;
   padding: 1rem;
-  color: rgb(86, 2, 86);
+  color: rgb(121, 0, 105);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -1025,13 +1030,36 @@ img.rounded {
   left: 0;
 }
 
-#inleiding-html {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5%;
+@media all and (max-width: 880px) {
+  .logo {
+    display: none;
+  }
 }
-
+@media (min-width: 1250px) and (max-width: 3840px) {
+  body {
+    padding-top: 5%;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1249px) {
+  body {
+    padding-top: 6%;
+  }
+}
+@media (min-width: 850px) and (max-width: 1049px) {
+  body {
+    padding-top: 7%;
+  }
+}
+@media (min-width: 550px) and (max-width: 849px) {
+  body {
+    padding-top: 10%;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  body {
+    padding-top: 15%;
+  }
+}
 #schizo-titel {
   text-align: center;
   font-family: "Bowlby One SC", cursive;
@@ -1042,8 +1070,21 @@ img.rounded {
   text-align: center;
 }
 
-#inleiding-html-img {
-  width: 40%;
+.geschiedenisHR {
+  background-color: #000000;
+  height: 4px;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.geschiedenisPN {
+  font-size: 4rem;
+  justify-content: center;
+  display: flex;
+}
+
+.geschiedenisPND {
+  padding: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
