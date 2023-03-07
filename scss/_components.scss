@@ -10,7 +10,8 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #a3f4f7;
+  background: rgb(0,255,209);
+  background: linear-gradient(90deg, rgba(0,255,209,1) 21%, rgba(0,255,252,1) 53%, rgba(0,202,255,1) 80%);
 
   ul {
     display: flex;

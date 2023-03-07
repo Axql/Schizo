@@ -570,7 +570,8 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #a3f4f7;
+  background: rgb(0, 255, 209);
+  background: linear-gradient(90deg, rgb(0, 255, 209) 21%, rgb(0, 255, 252) 53%, rgb(0, 202, 255) 80%);
 }
 nav ul {
   display: flex;
