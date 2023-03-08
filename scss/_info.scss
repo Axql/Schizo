@@ -1,3 +1,4 @@
+// alles met bubble is het design van maurits
 .bubble1 {
     position: absolute;
     left: 60em;
@@ -42,6 +43,7 @@
     z-index: -2;
 }
 
+// tekst
 .info-tekst {
     display: flex;
     flex-direction: column;
@@ -79,10 +81,21 @@
     }
 }
 
-.buttons {
+// button styling
+div.buttons {
     display: flex;
     position: relative;
     padding: 0 17em;
     gap: 10rem;
     top: 3rem;
+}
+
+a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+
+    .text-white {
+        color: white;
+    }
 }
