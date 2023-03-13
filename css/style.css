@@ -1156,4 +1156,14 @@ img.rounded {
   display: none;
 }
 
+#fotosym img {
+  width: 60%;
+  height: 60%;
+}
+
+#fotobeh {
+  width: 60%;
+  height: 60%;
+}
+
 /*# sourceMappingURL=style.css.map */

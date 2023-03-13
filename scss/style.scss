@@ -7,39 +7,41 @@
 
 // logo zou hierdoor verdwijnen na 880px
 @media all and (max-width: 880px) {
-    .logo { display: none; }
+  .logo {
+    display: none;
   }
+}
 
 
 // responsive per screen width | je kan meer elementen toevoegen als je iets moet responsive maken
 @media (min-width: 1250px) and (max-width: 3840px) {
-    body {
-        padding-top: 5%;
-    }
+  body {
+    padding-top: 5%;
+  }
 }
 
 @media (min-width: 1050px) and (max-width: 1249px) {
-    body {
-        padding-top: 6%;
-    }
+  body {
+    padding-top: 6%;
+  }
 }
 
 @media (min-width: 850px) and (max-width: 1049px) {
-    body {
-        padding-top: 7%;
-    }
+  body {
+    padding-top: 7%;
+  }
 }
 
 @media (min-width: 550px) and (max-width: 849px) {
-    body {
-        padding-top: 10%;
-    }
+  body {
+    padding-top: 10%;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 549px) {
-    body {
-        padding-top: 15%;
-    }
+  body {
+    padding-top: 15%;
+  }
 }
 
 
@@ -51,13 +53,13 @@
 // index.html start ---
 
 #schizo-titel {
-    text-align: center;
-    font-family: 'Bowlby One SC', cursive;
-    font-weight: 600;
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+  font-weight: 600;
 }
 
 #inleiding-html-text {
-    text-align: center;
+  text-align: center;
 }
 
 
@@ -66,25 +68,28 @@
 // geschiedenis.html start ---
 
 .geschiedenisHR {
-    background-color: #000000;
-    height: 4px;
-    border-radius: 4px;
-    width: 80%;
+  background-color: #000000;
+  height: 4px;
+  border-radius: 4px;
+  width: 80%;
 }
+
 .geschiedenisPN {
-    font-size: 4rem;
-    justify-content: center;
-    display: flex;
+  font-size: 4rem;
+  justify-content: center;
+  display: flex;
 }
-.geschiedenisPND{
-    padding: 4rem;
+
+.geschiedenisPND {
+  padding: 4rem;
 }
+
 // geschiedins.html end ---
+
 
 /* styling for quiz page */
 
-#quiz
-{
+#quiz {
   position: fixed;
   left: 25%;
   top: 25%;
@@ -94,70 +99,76 @@
 
 }
 
-#vraag1
-{
+#vraag1 {
   position: fixed;
-  
+
 }
 
-#vraag2
-{
-   position: fixed;
-   display: none;
-}
-
-#vraag3
-{
+#vraag2 {
   position: fixed;
   display: none;
 }
 
-#vraag4
-{
+#vraag3 {
   position: fixed;
   display: none;
 }
 
-#vraag5
-{
+#vraag4 {
   position: fixed;
   display: none;
 }
 
-#vraag6
-{
+#vraag5 {
   position: fixed;
   display: none;
 }
 
-#vraag7
-{
+#vraag6 {
   position: fixed;
   display: none;
 }
 
-#vraag8
-{
+#vraag7 {
   position: fixed;
   display: none;
 }
 
-#vraag9
-{
+#vraag8 {
   position: fixed;
   display: none;
 }
 
-#vraag10
-{
+#vraag9 {
   position: fixed;
   display: none;
 }
 
-#vraag11
-{
-  position: fixed; 
+#vraag10 {
+  position: fixed;
+  display: none;
+}
+
+#vraag11 {
+  position: fixed;
   display: none;
 }
 
 // ending of quiz page
+
+// styling foto symptomen pagina
+
+#fotosym
+{
+  img{
+    width: 60%;
+    height: 60%;
+  }
+  }
+
+
+  #fotobeh
+  {
+    width: 60%;
+    height: 60%;
+  }
