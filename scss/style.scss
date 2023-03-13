@@ -83,8 +83,7 @@
 
 /* styling for quiz page */
 
-#quiz
-{
+#quiz {
   position: fixed;
   left: 25%;
   top: 25%;
@@ -94,70 +93,94 @@
 
 }
 
-#vraag1
-{
+#vraag1 {
   position: fixed;
-  
 }
 
-#vraag2
-{
+#vraag2 {
    position: fixed;
    display: none;
 }
 
-#vraag3
-{
+#vraag3 {
   position: fixed;
   display: none;
 }
 
-#vraag4
-{
+#vraag4 {
   position: fixed;
   display: none;
 }
 
-#vraag5
-{
+#vraag5 {
   position: fixed;
   display: none;
 }
 
-#vraag6
-{
+#vraag6 {
   position: fixed;
   display: none;
 }
 
-#vraag7
-{
+#vraag7 {
   position: fixed;
   display: none;
 }
 
-#vraag8
-{
+#vraag8 {
   position: fixed;
   display: none;
 }
 
-#vraag9
-{
+#vraag9 {
   position: fixed;
   display: none;
 }
 
-#vraag10
-{
+#vraag10 {
   position: fixed;
   display: none;
 }
 
-#vraag11
-{
+#vraag11 {
   position: fixed; 
   display: none;
 }
 
+#submit-button {
+  display: none;
+
+}
+
+#v1-button {
+  display: block;
+  
+}
+#v2-button {
+  display: none;
+}
+#v3-button {
+  display: none;
+}
+#v4-button {
+  display: none;
+}
+#v5-button {
+  display: none;
+}
+#v6-button {
+  display: none;
+}
+#v7-button {
+  display: none;
+}
+#v8-button {
+  display: none;
+}
+#v9-button {
+  display: none;
+}
+#v10-button {
+  display: none;
+}
 // ending of quiz page

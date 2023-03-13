@@ -503,26 +503,6 @@ legend {
   font-weight: bold;
 }
 
-input, select {
-  width: 100%;
-  border-color: white;
-  border-radius: 6px;
-  padding: 0.4rem;
-}
-
-button {
-  background-color: rgba(231, 76, 60, 0.3);
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  padding: 0.5rem;
-}
-
-button:last-of-type {
-  background-color: #3498DB;
-}
-
 .bg-info {
   background-color: #3098F2;
 }
@@ -1153,6 +1133,50 @@ img.rounded {
 
 #vraag11 {
   position: fixed;
+  display: none;
+}
+
+#submit-button {
+  display: none;
+}
+
+#v1-button {
+  display: block;
+}
+
+#v2-button {
+  display: none;
+}
+
+#v3-button {
+  display: none;
+}
+
+#v4-button {
+  display: none;
+}
+
+#v5-button {
+  display: none;
+}
+
+#v6-button {
+  display: none;
+}
+
+#v7-button {
+  display: none;
+}
+
+#v8-button {
+  display: none;
+}
+
+#v9-button {
+  display: none;
+}
+
+#v10-button {
   display: none;
 }
 
