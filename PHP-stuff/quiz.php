@@ -13,12 +13,12 @@
         <nav>
             <img src="../Img/schitzofrenie-logo.png" alt="logo" class="logo">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="info.html">Informatie</a>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../info.html">Informatie</a>
                     <ul>
-                        <li><a href="geschiedenis.html">Geschiedenis</a></li>
-                        <li><a href="symptomen.html">Symptomen</a></li>
-                        <li><a href="behandeling.html">Behandeling</a></li>
+                        <li><a href="../geschiedenis.html">Geschiedenis</a></li>
+                        <li><a href="../symptomen.html">Symptomen</a></li>
+                        <li><a href="../behandeling.html">Behandeling</a></li>
                     </ul>
                 </li>
                 <li><a href="Quiz.php">Quiz</a></li>
