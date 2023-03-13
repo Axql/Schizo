@@ -1078,13 +1078,54 @@ img.rounded {
 }
 
 .geschiedenisPN {
-  font-size: 4rem;
+  font-size: 2rem;
   justify-content: center;
   display: flex;
+  line-height: 1em;
 }
 
 .geschiedenisPND {
-  padding: 4rem;
+  padding: 1rem 9rem;
+  position: relative;
+  z-index: -1;
+}
+
+.benadict {
+  position: absolute;
+  right: 0;
+  padding: 1rem 1rem;
+}
+
+.benadictt {
+  position: absolute;
+  right: 0;
+  padding: 1rem 2.5rem;
+}
+
+.pick {
+  position: absolute;
+  left: 0;
+  padding: 1rem 1rem;
+}
+
+.pickk {
+  position: absolute;
+  left: 0;
+  padding: 1rem 2.5rem;
+}
+
+.humoren {
+  position: absolute;
+  left: 0;
+  padding: 1rem 1rem;
+  height: 10rem;
+  width: 9rem;
+}
+
+.humorenn {
+  position: absolute;
+  left: 0;
+  padding: 1rem 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
