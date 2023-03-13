@@ -1,13 +1,9 @@
 @use 'grid';
 @use 'content';
 @use 'components';
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 
 // elke-pagina styling start ---
-
-// all normal text = sans serif
-html, body {
-    font-family: sans-serif;
-}
 
 // logo zou hierdoor verdwijnen na 880px
 @media all and (max-width: 880px) {
@@ -56,7 +52,8 @@ html, body {
 
 #schizo-titel {
     text-align: center;
-    font-weight: 800;
+    font-family: 'Bowlby One SC', cursive;
+    font-weight: 600;
 }
 
 #inleiding-html-text {

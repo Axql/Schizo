@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-    <meta charset=UTF-8" />
+    <meta charset=UTF-8/>
 
     <title>PHP QUIZ | Webdevtrick.com</title>
 
@@ -38,7 +38,8 @@
             <ol>
                 <li>
                     <div id="vraag1">
-                        <h6>Hoor je (minstens 1 keer per week) dingen die anderen niet horen, zoals ongewone geluiden, stemmen van fluisterende of pratende mensen?</h6>
+                        <h6>Hoor je (minstens 1 keer per week) dingen die anderen niet horen, 
+                        </h6> <h6>zoals ongewone geluiden, stemmen van fluisterende of pratende mensen?</h6>
 
                         <div>
                             <input type="radio" name="vraag-1-punt" id="vraag-1-punt" value="4" />
