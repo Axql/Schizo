@@ -1177,6 +1177,16 @@ img.rounded {
   display: none;
 }
 
+#fotosym img {
+  width: 60%;
+  height: 60%;
+}
+
+#fotobeh {
+  width: 60%;
+  height: 60%;
+}
+
 #submit-button {
   display: none;
 }
