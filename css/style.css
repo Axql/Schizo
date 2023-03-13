@@ -572,11 +572,14 @@ nav {
   flex-direction: column;
   background: rgb(0, 255, 209);
   background: linear-gradient(90deg, rgb(0, 255, 209) 21%, rgb(0, 255, 252) 53%, rgb(0, 202, 255) 80%);
+  z-index: 3;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.301);
 }
 nav .logo {
   position: absolute;
   left: 0;
   height: 3rem;
+  padding-top: 0.2rem;
 }
 nav ul {
   display: flex;
@@ -605,7 +608,9 @@ nav ul li > ul {
   left: 0;
   display: none;
   flex-direction: column;
-  background-color: #a3f4f7;
+  background: rgb(0, 255, 209);
+  background: linear-gradient(90deg, rgb(0, 255, 209) 21%, rgb(0, 255, 252) 53%, rgb(0, 202, 255) 80%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 nav ul li:hover ul {
   display: flex;
@@ -1126,6 +1131,70 @@ img.rounded {
   position: absolute;
   left: 0;
   padding: 1rem 2.5rem;
+}
+
+/* styling for quiz page */
+#quiz {
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+}
+
+#vraag1 {
+  position: fixed;
+}
+
+#vraag2 {
+  position: fixed;
+  display: none;
+}
+
+#vraag3 {
+  position: fixed;
+  display: none;
+}
+
+#vraag4 {
+  position: fixed;
+  display: none;
+}
+
+#vraag5 {
+  position: fixed;
+  display: none;
+}
+
+#vraag6 {
+  position: fixed;
+  display: none;
+}
+
+#vraag7 {
+  position: fixed;
+  display: none;
+}
+
+#vraag8 {
+  position: fixed;
+  display: none;
+}
+
+#vraag9 {
+  position: fixed;
+  display: none;
+}
+
+#vraag10 {
+  position: fixed;
+  display: none;
+}
+
+#vraag11 {
+  position: fixed;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
