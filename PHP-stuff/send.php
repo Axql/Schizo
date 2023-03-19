@@ -1,15 +1,6 @@
 <?php
+require 'functions.php';
 
-include 'functions.php';
 
-if (isset($_POST['email']) == true) 
-{
-      Sendmail($_POST['email']);
-      echo "mail is gestuurd";
-      
-} else
-{
-    echo " Voer een geldig email adress in";
-}
+send_email('336019@student.mboutrecht.nl');
 
-var_dump($_POST);
