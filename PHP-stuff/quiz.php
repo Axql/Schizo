@@ -109,8 +109,8 @@
                     <label for="vraag-4-punt">soms</label>
                 </div>
                 <div>
-                    <input type="radio" name="vraag-2-punt" id="vraag-2-punt" value="2" />
-                    <label for="vraag-2-punt">heel vaak</label>
+                    <input type="radio" name="vraag-4-punt" id="vraag-4-punt" value="2" />
+                    <label for="vraag-4-punt">heel vaak</label>
                 </div>
                 <div>
                     <input type="radio" name="vraag-4-punt" id="vraag-4-punt" value="1" />
@@ -142,8 +142,8 @@
             <div id="vraag6">
                 <h3>Denk je dat er een complot tegen je wordt gesmeed?</h3>
                 <div>
-                    <input type="radio" name="vraag-2-punt" id="vraag-2-punt" value="4" />
-                    <label for="vraag-2-punt">nooit</label>
+                    <input type="radio" name="vraag-6-punt" id="vraag-6-punt" value="4" />
+                    <label for="vraag-6-punt">nooit</label>
                 </div>
                 <div>
                     <input type="radio" name="vraag-6-punt" id="vraag-6-punt" value="3" />
