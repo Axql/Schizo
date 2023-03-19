@@ -157,46 +157,7 @@ div.banner {
   }
 }
 
-button {
-  padding: .5rem 1rem;
-  background-color: #fff;
-  border-radius: .2rem;
-  border: none;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
 
-  @each $name,
-  $color in color.get() {
-    &.#{$name}-button {
-      background-color: $color;
-
-      @if lightness($color)>60 {
-        color: color.get('dark')
-      }
-
-      @else {
-        color: color.get('light');
-      }
-    }
-  }
-}
-
-footer {
-  padding: 1rem 0;
-  background-color: #222;
-  text-align: center;
-  color: #fff;
-}
-
-img {
-  object-fit: cover;
-
-  &.rounded {
-    border-radius: 50%;
-    aspect-ratio: 1 / 1;
-  }
-}
 
 .card {
   background-color: color.get('light');
