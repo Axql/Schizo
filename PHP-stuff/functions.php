@@ -235,11 +235,11 @@ function send_email($to_address , $points) {
         
             if ($points > 22)
             {
-                $mail->Body = "u heeft " . $points . " van de 44 punten gehaald it betekend dat u  schizofrenie heeft";
+                $mail->Body = "u heeft " . $points . " van de 44 punten gehaald it betekend dat u  geen schizofrenie heeft";
             }
         else
         {
-            $mail->Body = "u heeft " . $points . " van de 44 punten gehaald it betekend dat u geen schizofrenie heeft";
+            $mail->Body = "u heeft " . $points . " van de 44 punten gehaald it betekend dat u  schizofrenie heeft";
         }
         
 
