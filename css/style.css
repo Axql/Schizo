@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
 html, body {
   width: 100%;
   height: 100%;
@@ -1119,7 +1120,7 @@ img.rounded {
   left: 5rem;
 }
 
-.buttons {
+div.buttons {
   display: flex;
   position: relative;
   padding: 0 17em;
@@ -1127,8 +1128,13 @@ img.rounded {
   top: 3rem;
 }
 
-html, body {
-  font-family: sans-serif;
+a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+}
+a .text-white {
+  color: white;
 }
 
 @media all and (max-width: 880px) {
@@ -1163,7 +1169,7 @@ html, body {
 }
 #schizo-titel {
   text-align: center;
-  font-family: serif;
+  font-family: "Bowlby One SC", cursive;
   font-weight: 600;
 }
 
@@ -1179,13 +1185,118 @@ html, body {
 }
 
 .geschiedenisPN {
-  font-size: 4rem;
+  font-size: 2rem;
   justify-content: center;
   display: flex;
+  line-height: 1em;
 }
 
 .geschiedenisPND {
-  padding: 4rem;
+  padding: 1rem 9rem;
+  position: relative;
+  z-index: -1;
+}
+
+.benadict {
+  position: absolute;
+  right: 0;
+  padding: 1rem 1rem;
+}
+
+.benadictt {
+  position: absolute;
+  right: 0;
+  padding: 1rem 2.5rem;
+}
+
+.pick {
+  position: absolute;
+  left: 0;
+  padding: 1rem 1rem;
+}
+
+.pickk {
+  position: absolute;
+  left: 0;
+  padding: 1rem 2.5rem;
+}
+
+.humoren {
+  position: absolute;
+  left: 0;
+  padding: 1rem 1rem;
+  height: 10rem;
+  width: 9rem;
+}
+
+.humorenn {
+  position: absolute;
+  left: 0;
+  padding: 1rem 2.5rem;
+}
+
+/* styling for quiz page */
+#quiz {
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+}
+
+#vraag1 {
+  position: fixed;
+}
+
+#vraag2 {
+  position: fixed;
+  display: none;
+}
+
+#vraag3 {
+  position: fixed;
+  display: none;
+}
+
+#vraag4 {
+  position: fixed;
+  display: none;
+}
+
+#vraag5 {
+  position: fixed;
+  display: none;
+}
+
+#vraag6 {
+  position: fixed;
+  display: none;
+}
+
+#vraag7 {
+  position: fixed;
+  display: none;
+}
+
+#vraag8 {
+  position: fixed;
+  display: none;
+}
+
+#vraag9 {
+  position: fixed;
+  display: none;
+}
+
+#vraag10 {
+  position: fixed;
+  display: none;
+}
+
+#vraag11 {
+  position: fixed;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
