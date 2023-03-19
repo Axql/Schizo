@@ -182,12 +182,43 @@
 // geschiedins.html end ---
 
 // behandeling page begin ---
-
+#img1-behandeling {
+  position: relative;
+  width: 10%;
+  left: 15%;
+  top: 3.5%;
+}
+#bh-titel {
+  position: relative;
+  text-align: center;
+  top: -6%;
+}
+#bh-inl {
+  position: relative;
+  text-align: center;
+  left: 22.5%;
+  width: 55%;
+}
+#left-bh {
+  display: flex;
+  align-items: space-between;
+  position: relative;
+  top: 3%;
+  left: 15%;
+  width: 35%;
+  height: 43%;
+  border-right: 1px solid black;
+}
 
 // behandeling page end ---
 
 
 /* styling for quiz page */
+#ant-img {
+  top: 40%;
+  position: fixed;
+  width: 10%;
+}
 
 #quiz-titel {
   display: flex;

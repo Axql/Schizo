@@ -41,7 +41,7 @@ echo TotaalPunten();
   <title>Punten</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
-
+<style> html { overflow: hidden;}</style>
 <body>
   <div class="nav-bar">
     <nav>
@@ -59,7 +59,7 @@ echo TotaalPunten();
               <li><a href=".login.php">Login</a></li>
     </nav>
 
-    <img src="../Img/foto-behandeling.jpg" alt="error"/>
+    <img id="ant-img" src="../Img/foto-behandeling.jpg" alt="error"/>
 
   </div>
 
