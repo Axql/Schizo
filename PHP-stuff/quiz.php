@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <img id="bg-quiz" src="../Img/quizpage-achtergrond.png">
     <div class="nav-bar">
         <nav>
             <img src="../Img/schitzofrenie-logo.png" alt="logo" class="logo">

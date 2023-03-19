@@ -181,12 +181,25 @@
 }
 // geschiedins.html end ---
 
+// behandeling page begin ---
+
+
+// behandeling page end ---
+
+
 /* styling for quiz page */
 
 #quiz-titel {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#bg-quiz {
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 70%;
 }
 
 .button-style {

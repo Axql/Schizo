@@ -1134,6 +1134,13 @@ div.banner.content-right div.content {
   justify-content: center;
 }
 
+#bg-quiz {
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 70%;
+}
+
 .button-style {
   align-items: center;
   appearance: none;
