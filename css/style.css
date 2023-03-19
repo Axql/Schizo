@@ -1127,37 +1127,108 @@ div.banner.content-right div.content {
   padding: 1rem 2.5rem;
 }
 
-#img1-behandeling {
-  position: relative;
-  width: 10%;
-  left: 15%;
-  top: 3.5%;
+@media (min-width: 1000px) and (max-width: 3840px) {
+  #img1-behandeling {
+    position: relative;
+    width: 10%;
+    left: 15%;
+    top: 3.5%;
+  }
+  #bh-titel {
+    position: relative;
+    text-align: center;
+    top: -10%;
+  }
+  #bh-inl {
+    position: relative;
+    text-align: center;
+    left: 22.5%;
+    width: 55%;
+  }
+  #left-bh {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 35%;
+    height: 35%;
+    border-right: 1px solid black;
+  }
+  #right-bh {
+    position: relative;
+    left: 1%;
+    width: 35%;
+    height: 35%;
+  }
+  #bh-container {
+    display: flex;
+    justify-content: center;
+  }
+  #bubble1-bh {
+    position: fixed;
+    right: 20%;
+    top: -5%;
+    width: 10%;
+    z-index: -1;
+  }
+  #bubble2-bh {
+    position: fixed;
+    right: -3%;
+    top: 70%;
+    width: 10%;
+    z-index: -1;
+    transform: rotate(90deg);
+  }
 }
-
-#bh-titel {
-  position: relative;
-  text-align: center;
-  top: -6%;
+@media (min-width: 100px) and (max-width: 999px) {
+  #img1-behandeling {
+    position: relative;
+    width: 20%;
+    left: 10%;
+    top: 10%;
+  }
+  #bh-titel {
+    position: relative;
+    text-align: center;
+    top: -8%;
+  }
+  #bh-inl {
+    position: relative;
+    text-align: center;
+    left: 10%;
+    width: 80%;
+  }
+  #left-bh {
+    position: relative;
+    width: 80%;
+    height: 35%;
+  }
+  #right-bh {
+    position: relative;
+    width: 80%;
+    height: 35%;
+  }
+  #bh-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #bubble1-bh {
+    position: fixed;
+    right: 10%;
+    top: 3%;
+    width: 20%;
+    z-index: -1;
+  }
+  #bubble2-bh {
+    position: fixed;
+    right: -3%;
+    top: 70%;
+    width: 20%;
+    z-index: -1;
+    transform: rotate(90deg);
+  }
 }
-
-#bh-inl {
-  position: relative;
-  text-align: center;
-  left: 22.5%;
-  width: 55%;
-}
-
-#left-bh {
-  display: flex;
-  align-items: space-between;
-  position: relative;
-  top: 3%;
-  left: 15%;
-  width: 35%;
-  height: 43%;
-  border-right: 1px solid black;
-}
-
 /* styling for quiz page */
 #ant-img {
   top: 40%;
