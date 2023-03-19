@@ -31,10 +31,44 @@ echo TotaalPunten();
 
 ?>
 <html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punten</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="nav-bar">
+    <nav>
+      <img src="../Img/schitzofrenie-logo.png" alt="logo" class="logo">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../html/info.html">Informatie</a>
+          <ul>
+            <li><a href="../html/geschiedenis.html">Geschiedenis</a></li>
+            <li><a href="../html/symptomen.html">Symptomen</a></li>
+            <li><a href="../html/behandeling.html">Behandeling</a></li>
+          </ul>
+        </li>
+        <li><a href=".Quiz.php">Quiz</a></li>
+              <li><a href=".login.php">Login</a></li>
+    </nav>
+
+    <img src="../Img/foto-behandeling.jpg" alt="error"/>
+
+  </div>
+
+
 <form action="send.php" method="post">
     <h3>voer uw E-Mail in voor een mailtje van uw score</h3>
     <label for="email">Enter your email:</label>
     <input type="email" id="email" name="email">
+    <input type="hidden" name="punten" value = <?php echo CountPoints();?>>
     <input type="submit" value="Submit" class="button">
 </form>
 

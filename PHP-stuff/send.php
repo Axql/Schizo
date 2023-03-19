@@ -1,6 +1,19 @@
 <?php
-require 'functions.php';
+
+include 'functions.php';
+
+if (isset($_POST['email']) == true) 
+{
+      send_email($_POST['email'], $_POST['punten']);
+
+      echo "De score zit in uw Inbox";
+    header("Refresh:10; quiz.php");
+} else
+{
+    echo " Voer een geldig email adress in ";
+}
 
 
-send_email('336019@student.mboutrecht.nl');
+
+
 
