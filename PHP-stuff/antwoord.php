@@ -71,5 +71,5 @@ echo TotaalPunten();
     <input type="hidden" name="punten" value = <?php echo CountPoints();?>>
     <input type="submit" value="Submit" class="button">
 </form>
-
+</body>
 </html>
