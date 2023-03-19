@@ -144,25 +144,3 @@ legend
     color: white;
     font-weight: bold;
 }
-
-input,select
-{
-    width:100%;
-    border-color: white;
-    border-radius: 6px;
-    padding: 0.4rem;
-}
-
-button
-{
-    background-color: transparentize(color.get('alert'),.7);
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    padding: .5rem;
-}
-button:last-of-type
-{
-    background-color: color.get('primary');
-}
