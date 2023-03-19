@@ -183,7 +183,15 @@ function vraag11($answer11)
 function TotaalPunten()
 {
     global $punten;
-    return "u heeft $punten van de 44 punten gehaald";
+    if ($punten > 22)
+    {
+        return "u heeft $punten van de 44 punten gehaald dit betekend dat u schizofrenie heeft";
+    }
+   else
+   {
+    return "u heeft $punten van de 44 punten gehaald it betekend dat u geen schizofrenie heeft";
+   }
+   
 }
 
 
@@ -191,5 +199,5 @@ function TotaalPunten()
 function Sendmail($mailUser)
 {
     $subject = "Uitslag scizofrenie test";
-    mail($mailUser, $subject, 'testing tijs sorry');
+    mail($mailUser, $subject, TotaalPunten());
 }

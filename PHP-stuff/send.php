@@ -2,14 +2,14 @@
 
 include 'functions.php';
 
-if (isset($_POST['email']) == 1) 
+if (isset($_POST['email']) == true) 
 {
       Sendmail($_POST['email']);
       echo "mail is gestuurd";
       
 } else
 {
-    echo " Voer een email adress in";
+    echo " Voer een geldig email adress in";
 }
 
 var_dump($_POST);
