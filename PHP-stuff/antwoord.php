@@ -56,7 +56,6 @@ echo TotaalPunten();
           </ul>
         </li>
         <li><a href=".Quiz.php">Quiz</a></li>
-              <li><a href=".login.php">Login</a></li>
     </nav>
 
     <img id="ant-img" src="../Img/foto-behandeling.jpg" alt="error"/>
