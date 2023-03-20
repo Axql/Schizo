@@ -105,6 +105,7 @@
     font-size: 1.7rem;
   }
 }
+
 a:link { text-decoration: none; }
 
 
@@ -121,7 +122,10 @@ a:active { text-decoration: none; }
 // elke-pagina styling eind ---
 
 
-// index.html start ---
+// index.html start --- 
+#img1-index, #img2-index, #img3-index {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+}
 #img1-index {
   position: relative;
   width: 20%;
