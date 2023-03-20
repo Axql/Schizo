@@ -1252,6 +1252,10 @@ a:active {
   justify-content: space-between;
 }
 
+#a-tag, #a-tag {
+  color: #000000;
+}
+
 .geschiedenisHR {
   background-color: #000000;
   height: 4px;
