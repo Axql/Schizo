@@ -1,5 +1,13 @@
 <?php
 
+require '../PHPMailer-master/src/PHPMailer.php';
+require '../PHPMailer-master/src/SMTP.php';
+require '../PHPMailer-master/src/Exception.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
 $punten = 0;
 
 function vraag1($answer1)
@@ -180,16 +188,65 @@ function vraag11($answer11)
     }
 }
 
+
 function TotaalPunten()
 {
     global $punten;
-    return "u heeft $punten van de 44 punten gehaald";
+    if ($punten > 22)
+            {
+                return "u heeft $punten van de 44 punten gehaald it betekend dat u geen schizofrenie heeft";
+            }
+        else
+        {
+            return "u heeft $punten van de 44 punten gehaald it betekend dat u  schizofrenie heeft";
+        }
+   
 }
 
-
-// wat er in de mail staat moet nog komen als wij de goede uistlagen van de test bedacht hebben
-function Sendmail($mailUser)
+function CountPoints()
 {
-    $subject = "Uitslag scizofrenie test";
-    mail($mailUser, $subject, 'testing tijs sorry');
+    global $punten;
+    return $punten;
+}
+//fucntion to send a mail using PHP mailer and gmail
+
+function send_email($to_address , $points) {
+    // Instantiate a new PHPMailer object
+    $mail = new PHPMailer(true);
+
+    try {
+        // Server settings
+        $mail->SMTPDebug = SMTP::DEBUG_OFF; // Enable verbose debug output
+        $mail->isSMTP(); // Send using SMTP
+        $mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+        $mail->SMTPAuth = true; // Enable SMTP authentication
+        $mail->Username = '341652165a@gmail.com'; // SMTP username
+        $mail->Password = 'muvipgvfzgnolkuu'; // SMTP password
+        $mail->SMTPSecure = "tls"; // Enable TLS encryption
+        $mail->Port = 587; // TCP port to connect to
+
+        // Recipients
+        $mail->setFrom('341652165a@gmail.com');
+        $mail->addAddress($to_address); // Add a recipient
+
+        // Content
+        $mail->isHTML(true); // Set email format to HTML
+        $mail->Subject = 'Uitslag scizofrenie test';
+        
+            if ($points > 22)
+            {
+                $mail->Body = "u heeft " . $points . " van de 44 punten gehaald it betekend dat u  geen schizofrenie heeft";
+            }
+        else
+        {
+            $mail->Body = "u heeft " . $points . " van de 44 punten gehaald it betekend dat u  schizofrenie heeft";
+        }
+        
+
+        // Send the email
+        $mail->send();
+        echo 'Email has been sent to ' . $to_address;
+    } catch (Exception $e) {
+        echo 'Message could not be sent. Error: ' . $mail->ErrorInfo;
+    }
 }

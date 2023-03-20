@@ -198,11 +198,6 @@ footer {
 img {
   object-fit: cover;
 
-  &.rounded {
-    border-radius: 50%;
-    aspect-ratio: 1 / 1;
-  }
-}
 
 .card {
   background-color: color.get('light');
@@ -326,4 +321,5 @@ $color in message.get() {
     left: 0;
   }
 
+}
 }
