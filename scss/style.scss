@@ -1,6 +1,7 @@
 @use 'grid';
 @use 'content';
 @use 'components';
+@use 'info';
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 
 // elke-pagina styling start ---
@@ -106,13 +107,34 @@
   }
 }
 
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
 
 
 
 // elke-pagina styling eind ---
 
 
-// index.html start ---
+// index.html start --- 
+#img1-index, #img2-index, #img3-index {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+}
+#img1-index {
+  position: relative;
+  width: 20%;
+}
+#img2-index{
+  position: relative;
+  width: 20%;
+}
 
 #schizo-titel {
     text-align: center;
@@ -123,8 +145,27 @@
 #inleiding-html-text {
     text-align: center;
 }
+.main-html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-
+#position1 {
+  display: flex;
+  justify-content: space-between;
+}
+#position2 {
+  display: flex;
+  justify-content: space-between;
+}
+#position3 {
+  display: flex;
+  justify-content: space-between;
+}
+#a-tag, #a-tag {
+  color: #000000;
+}
 // index.html end ---
 
 // geschiedenis.html start ---
@@ -140,6 +181,7 @@
     justify-content: center;
     display: flex;
     line-height: 1em;
+    color: #490B5B;
 }
 .geschiedenisPND{
     padding: 1rem 9rem;
@@ -182,12 +224,124 @@
 // geschiedins.html end ---
 
 // behandeling page begin ---
+@media (min-width: 1000px) and (max-width: 3840px) {
+  
+#img1-behandeling {
+  position: relative;
+  width: 10%;
+  left: 15%;
+  top: 3.5%;
+}
+#bh-titel {
+  position: relative;
+  text-align: center;
+  top: -10%;
+}
+#bh-inl {
+  position: relative;
+  text-align: center;
+  left: 22.5%;
+  width: 55%;
+}
+#left-bh {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 35%;
+  height: 35%;
+  border-right: 1px solid black;
+}
+#right-bh {
+  position: relative;
+  left: 1%;
+  width: 35%;
+  height: 35%;
+}
+#bh-container {
+  display: flex;
+  justify-content: center;
+}
 
+#bubble1-bh {
+  position: fixed;
+  right: 20%;
+  top: -5%; 
+  width: 10%;
+  z-index: -1;
+}
 
+#bubble2-bh {
+  position: fixed;
+  right: -3%;
+  top: 70%; 
+  width: 10%;
+  z-index: -1;
+  transform: rotate(90deg);
+}
+}
+
+@media (min-width: 100px) and (max-width: 999px) {
+  
+#img1-behandeling {
+  position: relative;
+  width: 20%;
+  left: 10%;
+  top: 10%;
+}
+#bh-titel {
+  position: relative;
+  text-align: center;
+  top: -8%;
+}
+#bh-inl {
+  position: relative;
+  text-align: center;
+  left: 10%;
+  width: 80%;
+}
+#left-bh {
+  position: relative;
+  width: 80%;
+  height: 35%;
+}
+#right-bh {
+  position: relative;
+  width: 80%;
+  height: 35%;
+}
+#bh-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bubble1-bh {
+  position: fixed;
+  right: 10%;
+  top: 3%; 
+  width: 20%;
+  z-index: -1;
+}
+
+#bubble2-bh {
+  position: fixed;
+  right: -3%;
+  top: 70%; 
+  width: 20%;
+  z-index: -1;
+  transform: rotate(90deg);
+}  
+}
 // behandeling page end ---
 
 
 /* styling for quiz page */
+#ant-img {
+  top: 40%;
+  position: fixed;
+  width: 10%;
+}
 
 #quiz-titel {
   display: flex;

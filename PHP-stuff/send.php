@@ -3,28 +3,28 @@
 include 'functions.php';
 require('config.php');
 
-if (isset($_POST['email']) == true) 
-{
+if (isset($_POST['email']) == true) {
     $email = $_POST['email'];
     $punten = $_POST['punten'];
-      send_email($email, $punten);
+    send_email($email, $punten);
 
-      echo "De score zit in uw Inbox ";
+    echo "<br>De score zit in uw Inbox";
+
     header("Refresh:10; quiz.php");
 
 
 
-$dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
+    $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
 
-try {
-    $pdo = new PDO($dsn, $dbUser, $dbPass);
-    if ($pdo) {
-        // echo " er is verbinding gemaakt";
+    try {
+        $pdo = new PDO($dsn, $dbUser, $dbPass);
+        if ($pdo) {
+            // echo " er is verbinding gemaakt";
+        }
+    } catch (PDOException $e) {
+        echo "er is geen verbinding met de db";
+        $e->getMessage();
     }
-} catch (PDOException $e) {
-    echo "er is geen verbinding met de db";
-    $e->getMessage();
-}
 
 
     try {
@@ -40,10 +40,10 @@ try {
 
         $statement->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
         $statement->bindValue(':punten', $_POST['punten'], PDO::PARAM_STR);
-      
+
         $statement->execute();
 
-      
+
         header("Refresh:3; quiz.php");
     } catch (PDOException $e) {
         // echo "Het record is niet geupdate";
@@ -51,14 +51,6 @@ try {
         header("Refresh:10; antwoord.php");
     }
     exit();
-}
-
-else
-{
+} else {
     echo " Voer een geldig email adress in ";
 }
-
-
-
-
-

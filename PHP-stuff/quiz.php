@@ -3,7 +3,7 @@
 <head>
     <meta charset=UTF-8/>
 
-    <title>PHP QUIZ | Webdevtrick.com</title>
+    <title>PHP QUIZ</title>
 
     <link rel="stylesheet" type="text/css" href="../css/style.css " />
 </head>
@@ -23,7 +23,6 @@
                     </ul>
                 </li>
                 <li><a href="Quiz.php">Quiz</a></li>
-                <li><a href="login.php">Login</a></li>
         </nav>
     </div>
 
@@ -37,7 +36,7 @@
     <div id="quiz">
         <form action="antwoord.php " method="post">
             <div id="vraag1">
-                <h3>Hoor je (minstens 1 keer per week) dingen die anderen niet horen, <br>
+                <h3>Hoor je (minstens 1 keer per week) dingen die <br>anderen niet horen, 
                 zoals ongewone geluiden, stemmen van fluisterende of pratende mensen?</h3>
                 <div>
                     <input type="radio" name="vraag-1-punt" id="vraag-1-punt" value="4" checked />
