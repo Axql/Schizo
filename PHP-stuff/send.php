@@ -9,7 +9,7 @@ if (isset($_POST['email']) == true)
     $punten = $_POST['punten'];
       send_email($email, $punten);
 
-      echo "De score zit in uw Inbox ";
+      echo "<br>De score zit in uw Inbox";
     header("Refresh:10; quiz.php");
 
 
