@@ -1,0 +1,101 @@
+// alles met bubble is het design van maurits
+.bubble1 {
+    position: absolute;
+    left: 60em;
+    top: 2rem;
+    width: 14rem;
+    z-index: -2;
+}
+
+.bubble2 {
+    position: absolute;
+    left: 5em;
+    top: 5rem;
+    width: 11rem;
+    rotate: 180deg;
+    z-index: -2;
+}
+
+.bubble3 {
+    position: absolute;
+    left: 35em;
+    bottom: -35rem;
+    width: 9rem;
+    rotate: 81deg;
+    z-index: -2;
+}
+
+.bubble4 {
+    position: absolute;
+    left: 10em;
+    bottom: -47rem;
+    width: 14rem;
+    rotate: 238deg;
+    z-index: -2;
+}
+
+.bubble5 {
+    position: absolute;
+    left: 64em;
+    bottom: -44rem;
+    width: 10rem;
+    rotate: 320deg;
+    z-index: -2;
+}
+
+// tekst
+.info-tekst {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -1em;
+    z-index: -1;
+
+    h1 {
+        align-self: center;
+        width: 12rem;
+        height: 0;
+        margin: 2.5em;
+        padding: 1em 0;
+    }
+
+    .Symptomen {
+        position: relative;
+        width: 60rem;
+        padding: 0 12em;
+        left: 5rem;
+    }
+
+    .Oorzaak {
+        position: relative;
+        width: 60rem;
+        padding: 2em 12em;
+        left: 5rem;
+    }
+
+    .Gevolgen {
+        position: relative;
+        width: 60rem;
+        padding: 2em 12em;
+        left: 5rem;
+    }
+}
+
+// button styling
+div.buttons {
+    display: flex;
+    position: relative;
+    padding: 0 17em;
+    gap: 10rem;
+    top: 3rem;
+}
+
+a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+
+    .text-white {
+        color: white;
+    }
+}
