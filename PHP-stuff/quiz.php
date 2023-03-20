@@ -3,7 +3,7 @@
 <head>
     <meta charset=UTF-8/>
 
-    <title>PHP QUIZ | Webdevtrick.com</title>
+    <title>PHP QUIZ</title>
 
     <link rel="stylesheet" type="text/css" href="../css/style.css " />
 </head>
