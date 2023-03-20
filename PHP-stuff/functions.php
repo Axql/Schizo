@@ -194,11 +194,11 @@ function TotaalPunten()
     global $punten;
     if ($punten > 22)
             {
-                return "u heeft $punten van de 44 punten gehaald it betekend dat u  schizofrenie heeft";
+                return "u heeft $punten van de 44 punten gehaald it betekend dat u geen schizofrenie heeft";
             }
         else
         {
-            return "u heeft $punten van de 44 punten gehaald it betekend dat u geen schizofrenie heeft";
+            return "u heeft $punten van de 44 punten gehaald it betekend dat u  schizofrenie heeft";
         }
    
 }
